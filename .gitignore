@@ -6,6 +6,12 @@
 .pnp.js
 .yarn/install-state.gz
 
+/app
+/components
+/constants
+/liib
+/public
+
 # testing
 /coverage
 
