@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin"
 
 const config = {
   darkMode: ["class"],
@@ -22,6 +23,9 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        'medium-purple': '#9a00c7',
+        'medium-orange': '#ff8b18',
+        'serious-middle': 'rgba(128, 43, 185, .72)',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
@@ -53,6 +57,12 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        'mega-heading-gradient': 'linear-gradient(140deg, var(--tw-gradient-stops))',
+      },
+      backgroundClip: {
+        text: 'text',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -72,9 +82,21 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.bg-clip-text': {
+          '-webkit-background-clip': 'text',
+          'background-clip': 'text',
+        },
+      })
+    }),
+    require("tailwindcss-animate")
+  ],
+
 } satisfies Config
 
 export default config
