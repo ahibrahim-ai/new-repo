@@ -19,7 +19,7 @@ export default function Home() {
           </div>
 
           <Image 
-          src="/assets/images/hero.png"
+          src="/assets/images/calendar-clock.png"
           alt="hero"
           width={1000}
           height={1000}
