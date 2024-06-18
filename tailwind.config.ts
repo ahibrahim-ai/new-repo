@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss"
-import plugin from "tailwindcss/plugin"
 
 const config = {
   darkMode: ["class"],
@@ -26,6 +25,10 @@ const config = {
         'medium-purple': '#9a00c7',
         'medium-orange': '#ff8b18',
         'serious-middle': 'rgba(128, 43, 185, .72)',
+        'grey-50': '#dbd7d2',
+        'grey-500': '#757575',
+        'primary-50': '#272727',
+        'button-color-1': '#ff9933',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
@@ -84,19 +87,13 @@ const config = {
       },
     
     },
+    variants: {
+      extend: {
+        backgroundColor: ['focus'],  // Enable focus variant for background color
+      },
+    },
   },
-  plugins: [
-    plugin(function({ addUtilities }) {
-      addUtilities({
-        '.bg-clip-text': {
-          '-webkit-background-clip': 'text',
-          'background-clip': 'text',
-        },
-      })
-    }),
-    require("tailwindcss-animate")
-  ],
-
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
 export default config

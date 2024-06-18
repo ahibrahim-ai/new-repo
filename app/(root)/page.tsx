@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-fixed bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/assets/images/website-bg.png')"}}>
-      <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="mega-heading-1 bg-clip-text text-transparent bg-gradient-to-r from-medium-purple via-serious-middle to-medium-orange h1-bold">Find Islamic events, classes, courses & more.</h1>
@@ -27,7 +26,6 @@ export default function Home() {
           2xl:max-h-[50vh]"
           />
         </div>
-      </section>
       </div>
 
       
