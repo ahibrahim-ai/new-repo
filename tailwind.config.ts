@@ -27,7 +27,7 @@ const config = {
         'serious-middle': 'rgba(128, 43, 185, .72)',
         'grey-50': '#dbd7d2',
         'grey-500': '#757575',
-        'primary-50': '#272727',
+        'primary-50': '#f3e1ff',
         'button-color-1': '#ff9933',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

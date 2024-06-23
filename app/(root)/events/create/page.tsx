@@ -6,6 +6,8 @@ const CreateEvent = () => {
 
   const userId = sessionClaims?.userId as string;
 
+  console.log(userId)
+  
   return (
     <>
       <section className="min-h-screen bg-fixed bg-center bg-cover bg-no-repeat" style={{backgroundImage:"url('/assets/images/website-bg.png')"}}>

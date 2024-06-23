@@ -303,3 +303,15 @@ body {
 .react-datepicker__time-list-item--selected {
   background-color: #624cf5 !important;
 }
+
+.imageContainer {
+  border-radius: 20px; /* Adjust the border-radius as needed */
+  overflow: hidden;
+  border: 1px solid white; /* Adjust the border width and color as needed */
+  box-shadow: 0 8px 12px rgba(153, 153, 153, .2)
+}
+
+.divider {
+  height: 2px;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(14, 96.04%, 63.98%, 1.00), white);
+}
