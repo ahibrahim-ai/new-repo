@@ -32,7 +32,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
           <div className="flex flex-col justify-center gap-8">
             <h1 className="mega-heading-1 bg-clip-text text-transparent bg-gradient-to-r from-medium-purple via-serious-middle to-medium-orange h1-bold">Sed ut perspiciatis unde omnis iste natus.</h1>
             <p className="p-regular-20 md:p-regular-24">Lorem ipsum dolor sit amet, consectetuer adipiscin.</p>
-            <Button size="lg" asChild className="button w-full sm:w-fit">
+            <Button size="lg" asChild className="button w-full hover:shadow-lg sm:w-fit">
               <Link href="#events">
                 Explore Now
               </Link>

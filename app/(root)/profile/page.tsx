@@ -22,6 +22,8 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
 
   return (
     <>
+     <div className='divider'>
+    </div>
       {/* My Tickets */}
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
