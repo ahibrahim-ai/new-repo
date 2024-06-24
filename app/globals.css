@@ -308,7 +308,7 @@ body {
   border-radius: 20px; /* Adjust the border-radius as needed */
   overflow: hidden;
   border: 1px solid white; /* Adjust the border width and color as needed */
-  box-shadow: 0 8px 12px rgba(153, 153, 153, .2)
+  box-shadow: 0 8px 12px rgb(60, 60, 60, .2)
 }
 
 .divider {

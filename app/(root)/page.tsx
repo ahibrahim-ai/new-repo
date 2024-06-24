@@ -40,12 +40,12 @@ export default async function Home({ searchParams }: SearchParamProps) {
           </div>
       
           <Image 
-          src="/assets/images/calendar-clock.png"
+          src="/assets/images/calendar-clock.jpg"
           alt="hero"
-          objectFit='cover'
-          width={1000}
-          height={1000}
-          className="imageContainer max-h-[70vh] object-contain object-center 
+          object-fit="cover"
+          width={500}
+          height={500}
+          className="imageContainer max-h-[70vh] object-contain object-center
           2xl:max-h-[50vh]"
           />
   
