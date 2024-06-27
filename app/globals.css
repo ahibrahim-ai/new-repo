@@ -239,7 +239,7 @@ body {
   }
 
   .button {
-    @apply rounded-full h-[54px] p-regular-16;
+    @apply rounded-full h-[54px] bg-purple-400 p-regular-16;
   }
   /* .bg-primary-50 {
     background-color: #ffd1ad;  /* Use the color you defined in tailwind.config.js */
@@ -279,7 +279,7 @@ body {
 .cl-formButtonPrimary:hover,
 .cl-formButtonPrimary:focus,
 .cl-formButtonPrimary:active {
-  background-color: #ff9933
+  background-color: #ffb321
 }
 
 /* ========================================== REACT-DATEPICKER STYLES */
@@ -313,5 +313,5 @@ body {
 
 .divider {
   height: 2px;
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, hsla(14, 96.04%, 63.98%, 1.00), white);
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #a678ff, white);
 }
