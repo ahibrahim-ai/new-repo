@@ -30,24 +30,25 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <div className="min-h-screen bg-fixed bg-center bg-cover bg-no-repeat bg-white">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
-            <h1 className="mega-heading-1 bg-clip-text text-transparent bg-gradient-to-r from-medium-purple via-serious-middle to-medium-orange h1-bold">Sed ut perspiciatis unde omnis iste natus.</h1>
-            <p className="p-regular-20 md:p-regular-24">Lorem ipsum dolor sit amet, consectetuer adipiscin.</p>
+            <h1 className="mega-heading-1 bg-clip-text text-transparent bg-gradient-to-r from-medium-purple via-serious-middle to-medium-orange h1-bold">The first platform for muslim events.</h1>
+            <p className="p-regular-20 md:p-regular-24">Discover events, courses, seminars and more!</p>
             <Button size="lg" asChild className="button w-full hover:shadow-lg sm:w-fit">
               <Link href="#events">
                 Explore Now
               </Link>
             </Button>
           </div>
-      
+                
           <Image 
           src="/assets/images/calendar-clock.jpg"
           alt="hero"
           object-fit="cover"
           width={500}
           height={500}
-          className="imageContainer max-h-[70vh] object-contain object-center
+          className="imageContainer max-h-[70vh] object-fill object-center
           2xl:max-h-[50vh]"
           />
+
   
         </div>
         <div className='p-8'>
