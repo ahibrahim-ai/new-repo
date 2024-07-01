@@ -40,8 +40,8 @@ export default async function Home({ searchParams }: SearchParamProps) {
           </div>
                 
           <Image 
-          src="/assets/images/calendar-clock.jpg"
-          alt="hero"
+          src="/assets/images/hero-2.png"
+          alt="islamic events"
           object-fit="cover"
           width={500}
           height={500}
