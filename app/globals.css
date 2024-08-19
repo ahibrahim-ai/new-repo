@@ -81,7 +81,7 @@
 }
 
 body {
-  font-family: var(--font-poppins)
+  font-family: var(--font-roboto)
 }
 
 .filter-grey {
@@ -126,7 +126,7 @@ body {
 
   /* 36 */
   .h3-bold {
-    @apply font-bold text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+    @apply font-semibold text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
   }
 
   .h3-medium {
@@ -279,7 +279,7 @@ body {
 .cl-formButtonPrimary:hover,
 .cl-formButtonPrimary:focus,
 .cl-formButtonPrimary:active {
-  background-color: #ffb321
+  background-color: #9767FD;
 }
 
 /* ========================================== REACT-DATEPICKER STYLES */
@@ -307,6 +307,7 @@ body {
 .imageContainer {
   /* Adjust the border-radius as needed */
   overflow: hidden;
+  filter: drop-shadow(0 0 20px rgb(218,218,218))
   
 }
 
@@ -315,9 +316,12 @@ body {
   background-image: radial-gradient(circle farthest-corner at 50% 50%, #a678ff, white);
 }
 
-/* .imageContainer {
-  border-radius: 20px; /* Adjust the border-radius as needed */
-  overflow: hidden;
-  border: 1px solid white; /* Adjust the border width and color as needed */
-  box-shadow: 0 8px 12px rgb(60, 60, 60, .2)
-÷ */
+
+
+.bg-purple-400 {
+  background-color: #7D46F4;
+}
+
+.bg-custom {
+  background-color: #F8F8FA;
+}

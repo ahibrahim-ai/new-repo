@@ -23,9 +23,8 @@ const Card = ({ event, hasOrderLink, hidePrice }: CardProps) => {
   : '';
 
   return (
-    <div className="group relative flex min-h-[380px] w-full max-w-[400px] flex-col overflow-hidden rounded-xl bg-white shadow-md transition-all hover:shadow-lg md:min-h-[438px]">
-      <Link 
-        href={`/events/${event._id}`}
+    <Link href={`/events/${event._id}`} className="group relative flex min-h-[380px] w-full max-w-[400px] flex-col overflow-hidden rounded-xl bg-white shadow-md transition-all hover:shadow-lg md:min-h-[438px]">
+      <div 
         style={{backgroundImage: `url(${event.imageUrl})`}}
         className="flex-center flex-grow bg-gray-50 bg-cover bg-center text-grey-500"
       />
@@ -74,7 +73,7 @@ const Card = ({ event, hasOrderLink, hidePrice }: CardProps) => {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

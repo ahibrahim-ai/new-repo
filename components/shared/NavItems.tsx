@@ -17,8 +17,8 @@ const NavItems = () => {
           return (
             <li 
               key={link.route}
-              className={`${isActive && 'text-black bg-purple-100 rounded-full p-2'
-                } cursor-pointer duration-300 hover:text-stone-950 hover:bg-primary/50 rounded-full hover:p-2 flex-center text-[.8rem] whitespace-normal`}>
+              className={`${isActive && 'text-black rounded-full'
+                } cursor-pointer duration-200 hover:text-stone-950 hover:bg-purple-100 rounded-full hover:p-2 flex-center text-[1rem]`}>
               <Link href={link.route}>{link.label}</Link>
             </li>
           )
